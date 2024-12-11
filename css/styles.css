@@ -688,6 +688,11 @@ address a {
   .container {
     width: 100%;
   }
+  .header .container .address .address-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
   /* SECTION-TWO*/
 
   .section-two .section-ul {
@@ -717,18 +722,113 @@ address a {
     row-gap: 72px;
   }
   .section-four .section-ul .list {
-    width: 356px;
+    min-width: 356px;
+  }
+  .footer-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .footer-section .container .footer-logo {
+    margin-right: 0;
+  }
+  .footer-section .container .modal-overlay {
+    margin-left: 0;
   }
 }
 
 /*mobil*/
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .header-div {
+  .container {
     width: 100%;
   }
-  .section-ul {
-    display: block;
+  .section-two .section-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 72px;
+  }
+  .section-two .section-ul .list {
+    width: 288px;
+  }
+  .section-three .section-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+  }
+  .section-three .section-ul .list {
+    width: 264px;
+  }
+  .section-four .section-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-four .section-ul .list {
+    min-width: 288px;
+  }
+  .footer-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+  .modal-overlay .footer-modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .modal-overlay .footer-modal-form .footer-modal-button {
+    width: 165px;
+  }
+  .header-nav .header-ul {
+    display: none;
+  }
+  .address {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 72px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 168px;
+    /* display: none; */
+  }
+  .menu .modal-button-box {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+  }
+  .menu .menu-address {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .menu .menu-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .menu .address-ul {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  .menu .menu-ul .menu-active {
+    color: blue;
+  }
+  .menu .address-ul .menu-li {
+    color: blue;
   }
 }
