@@ -32,7 +32,7 @@ a {
 }
 
 .container {
-  width: 1158px;
+  width: 1157px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -234,7 +234,7 @@ address a {
 }
 .section-ul {
   display: flex;
-  gap: 24px;
+  gap: 72px;
 }
 
 .section-ul .list.team {
@@ -512,6 +512,7 @@ address a {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
 }
 .modal-container {
   position: absolute;
@@ -674,4 +675,60 @@ address a {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: auto;
+}
+
+/*Son Eklenenler*/
+.icon-box {
+  display: none;
+}
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1157px) {
+  /*header*/
+  .container {
+    width: 100%;
+  }
+  /* SECTION-TWO*/
+
+  .section-two .section-ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .section-two .section-ul .list {
+    width: 356px;
+  }
+
+  .section-three .section-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .section-three .section-ul .list {
+    width: 264px;
+  }
+  .section-four .section-ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .section-four .section-ul .list {
+    width: 356px;
+  }
+}
+
+/*mobil*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header-div {
+    width: 100%;
+  }
+  .section-ul {
+    display: block;
+    gap: 72px;
+  }
 }
