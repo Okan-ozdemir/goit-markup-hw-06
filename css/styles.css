@@ -802,7 +802,7 @@ address a {
     display: flex;
     flex-direction: column;
     gap: 168px;
-    /* display: none; */
+    display: none;
   }
   .menu .modal-button-box {
     position: absolute;
